@@ -1,24 +1,3 @@
-```python
-import pandas as pd
-excel_path = 'Base_Consultorio_Nutricionista_2024_2025_SUJA.xlsx'
-xls = pd.ExcelFile(excel_path)
-print("Sheet names:", xls.sheet_names)
-df_raw = pd.read_excel(excel_path, sheet_name=xls.sheet_names[0])
-print("Shape:", df_raw.shape)
-print("Columns:", df_raw.columns.tolist())
-print(df_raw.head(2))
-
-
-```
-
-```text
-Sheet names: ['Sheet1']
-Shape: (5100, 17)
-Columns: ['id_consulta', 'id_paciente', 'nome_paciente', 'cpf', 'telefone', 'email', 'genero', 'bairro', 'data_consulta', 'nutricionista', 'tipo_consulta', 'objetivo', 'peso', 'altura', 'valor_consulta', 'forma_pagamento', 'status_consulta']
-   id_consulta  id_paciente  nome_paciente             cpf telefone                             email    genero    bairro data_consulta      nutricionista     tipo_consulta                objetivo  peso altura valor_consulta forma_pagamento status_consulta
-0         4040          454  Matteo Aragão  962.531.840-24      NaN           aylacostela@example.org         F  Perdizes    2025-12-05      Dra Ana Paula  Consulta Inicial   Performance Esportiva   NaN  1.73m            250             pix       REALIZADA
-1         3816         1083  Diogo Ribeiro             NaN      NaN  luiz-fernandoda-rosa@example.org  Feminino   Santana    2025-02-15  Dra Mariana Alves  Consulta Inicial  Controle de Colesterol  71.6   1.91            350          Debito       cancelado
-
 
 ```
 
